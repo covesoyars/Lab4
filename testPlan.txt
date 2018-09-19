@@ -3,3 +3,4 @@
 {8, 4, null} output: IllegalArgumentException
 {0, 104, 180, -1} output: {180, 104, 0, -1}
 {-1, -2, -3, -4} output: {-1, -2, -3, -4}
+{1, 1, 1, 1} output: {1, 1, 1, 1}
