@@ -21,12 +21,18 @@ public class Lab4 {
 		Integer[] test7 = {};
 		Integer[] test8 = {3,2,1};
 		
-		Integer[] testSort = sortDescending(test8);
-		for(Integer element : testSort) {
-			System.out.println(element);
-		}
+		//test 
+		sortDescending(test1);
+		sortDescending(test2);
+		sortDescending(test3);
+		sortDescending(test4);
+		sortDescending(test5);
+		sortDescending(test6);
+		sortDescending(test7);
+		sortDescending(test8);
 	}
-	public static Integer[] sortDescending(Integer[] anArray) {
+	public static Integer[] sortDescending(Integer[] arr) {
+		Integer [] anArray = arr.clone();
 		if(anArray == null) {
 			throw new IllegalArgumentException("Input array was null");
 		}
@@ -39,12 +45,12 @@ public class Lab4 {
 			return returnArray;
 		}
 		else {
-			while(!isSorted(anArray)) {
-				for(int i = 0; i < anArray.length -1; i++) {
-					if(anArray[i] < anArray[i+1]) {
-						Integer temp = anArray[i];
-						anArray[i] = anArray[i+1];
-						anArray[i+1] = temp;
+			for(int i = 0; i > anArray.length; i++) {
+				for(int j = 0; j < anArray.length -1; j++) {
+					if(anArray[j] < anArray[j+1]) {
+						Integer temp = anArray[j];
+						anArray[j] = anArray[j+1];
+						anArray[j+1] = temp;
 					}
 				}
 			}
