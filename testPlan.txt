@@ -1,6 +1,7 @@
 {0, 1, 2, 3, 4} output: {4, 3, 2, 1, 0}
 {12, 17, 18} output: {18, 17, 12}
-{8, 4, null} output: IllegalArgumentException
+null output: IllegalArgumentException
 {0, 104, 180, -1} output: {180, 104, 0, -1}
 {-1, -2, -3, -4} output: {-1, -2, -3, -4}
 {1, 1, 1, 1} output: {1, 1, 1, 1}
+{} output: {}
